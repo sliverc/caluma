@@ -226,36 +226,15 @@ class OrderingFilter(OrderingFilter):
         return super().filter(qs, newvals)
 
 
-class IntegerFilter(Filter):
-    field_class = forms.IntegerField
-
-
 class FilterSet(GrapheneFilterSetMixin, FilterSet):
     created_by_user = CharFilter()
     created_by_group = CharFilter()
-
-    offset = IntegerFilter(method="filter_offset")
-    limit = IntegerFilter(method="filter_limit")
-
-    @staticmethod
-    def filter_offset(queryset, name, value):
-        return queryset[value:]
-
-    @staticmethod
-    def filter_limit(queryset, name, value):
-        return queryset[:value]
 
     def filter_queryset(self, queryset):
         def _filter_prio(filter_name):
             # order before any others
             if "order" in filter_name.lower():
                 return 20
-
-            # offset to the end, but before limit
-            elif filter_name == "offset":
-                return 80
-            elif filter_name == "limit":
-                return 90
 
             # normal filters
             return 50

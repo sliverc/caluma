@@ -13,7 +13,6 @@ def test_query_all_cases(db, snapshot, case, result_count, flow, schema_executor
     query = """
         query AllCases {
           allCases (status: RUNNING){
-            totalCount
             edges {
               node {
                 status
@@ -213,7 +212,6 @@ def test_status_filter(db, case_factory, schema_executor):
     query = """
         query AllCases {
           allCases (status: [RUNNING, CANCELED]){
-            totalCount
             edges {
               node {
                 status
@@ -360,12 +358,10 @@ def test_order_by_question_answer_value(
     query = """
         query AllCases($orderByQuestionAnswerValue: String) {
           allCases(orderByQuestionAnswerValue: $orderByQuestionAnswerValue){
-            totalCount
             edges {
               node {
                 document {
                   answers(orderBy: CREATED_AT_ASC) {
-                    totalCount
                     edges {
                       node {
                         ... on StringAnswer {
@@ -398,7 +394,6 @@ def test_order_by_question_answer_value(
 
     assert not bool(result.errors) == success
     if success:
-        assert result.data["allCases"]["totalCount"] == 3
         snapshot.assert_match(result.data)
 
 
@@ -415,7 +410,6 @@ def test_document_form(
     query = """
         query AllCases ($form: String!) {
           allCases (documentForm: $form){
-            totalCount
             edges {
               node {
                 document {

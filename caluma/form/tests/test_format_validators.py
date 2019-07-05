@@ -25,7 +25,6 @@ def test_fetch_format_validators(snapshot, schema_executor, settings):
               startCursor
               endCursor
             }
-            totalCount
             edges {
               node {
                 slug

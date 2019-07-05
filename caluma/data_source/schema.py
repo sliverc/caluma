@@ -1,7 +1,6 @@
-from graphene import ConnectionField, String
+from graphene import Connection, ConnectionField, String
 from graphene.types import ObjectType
 
-from ..core.types import CountableConnectionBase
 from .data_source_handlers import get_data_source_data, get_data_sources
 
 
@@ -10,7 +9,7 @@ class DataSource(ObjectType):
     name = String(required=True)
 
 
-class DataSourceConnection(CountableConnectionBase):
+class DataSourceConnection(Connection):
     class Meta:
         node = DataSource
 
@@ -20,7 +19,7 @@ class DataSourceData(ObjectType):
     slug = String(required=True)
 
 
-class DataSourceDataConnection(CountableConnectionBase):
+class DataSourceDataConnection(Connection):
     class Meta:
         node = DataSourceData
 

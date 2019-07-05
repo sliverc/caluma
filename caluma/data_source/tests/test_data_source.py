@@ -12,7 +12,6 @@ def test_fetch_data_sources(snapshot, schema_executor, settings):
     query = """
         query dataSources {
           allDataSources {
-            totalCount
             pageInfo {
               startCursor
               endCursor
@@ -46,7 +45,6 @@ def test_fetch_data_from_data_source(snapshot, schema_executor, data_source_sett
     query = """
         query dataSource {
           dataSource (name: "MyDataSource") {
-            totalCount
             pageInfo {
               startCursor
               endCursor
@@ -126,7 +124,6 @@ def test_data_source_defaults(snapshot, schema_executor, settings):
     query = """
             query dataSource {
               dataSource (name: "MyBrokenDataSource") {
-                totalCount
                 pageInfo {
                   startCursor
                   endCursor

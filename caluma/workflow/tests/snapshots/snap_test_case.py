@@ -4,15 +4,14 @@ from __future__ import unicode_literals
 
 from snapshottest import Snapshot
 
+
 snapshots = Snapshot()
 
 snapshots["test_query_all_cases[running-1] 1"] = {
-    "allCases": {"edges": [{"node": {"status": "RUNNING"}}], "totalCount": 1}
+    "allCases": {"edges": [{"node": {"status": "RUNNING"}}]}
 }
 
-snapshots["test_query_all_cases[completed-0] 1"] = {
-    "allCases": {"edges": [], "totalCount": 0}
-}
+snapshots["test_query_all_cases[completed-0] 1"] = {"allCases": {"edges": []}}
 
 snapshots['test_start_case[startCase-["group-name"]|groups-100] 1'] = {
     "startCase": {
@@ -222,8 +221,7 @@ snapshots["test_order_by_question_answer_value[text-True-True] 1"] = {
                             "edges": [
                                 {"node": {"stringValue": "a"}},
                                 {"node": {"stringValue": "b2"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -235,8 +233,7 @@ snapshots["test_order_by_question_answer_value[text-True-True] 1"] = {
                             "edges": [
                                 {"node": {"stringValue": "b"}},
                                 {"node": {"stringValue": "c2"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -248,14 +245,12 @@ snapshots["test_order_by_question_answer_value[text-True-True] 1"] = {
                             "edges": [
                                 {"node": {"stringValue": "c"}},
                                 {"node": {"stringValue": "a2"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
             },
-        ],
-        "totalCount": 3,
+        ]
     }
 }
 
@@ -269,8 +264,7 @@ snapshots["test_order_by_question_answer_value[text-True-False] 1"] = {
                             "edges": [
                                 {"node": {"stringValue": "c"}},
                                 {"node": {"stringValue": "a2"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -282,8 +276,7 @@ snapshots["test_order_by_question_answer_value[text-True-False] 1"] = {
                             "edges": [
                                 {"node": {"stringValue": "b"}},
                                 {"node": {"stringValue": "c2"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -295,14 +288,12 @@ snapshots["test_order_by_question_answer_value[text-True-False] 1"] = {
                             "edges": [
                                 {"node": {"stringValue": "a"}},
                                 {"node": {"stringValue": "b2"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
             },
-        ],
-        "totalCount": 3,
+        ]
     }
 }
 
@@ -311,36 +302,20 @@ snapshots["test_order_by_question_answer_value[form-True-True] 1"] = {
         "edges": [
             {
                 "node": {
-                    "document": {
-                        "answers": {
-                            "edges": [{"node": {"stringValue": "b"}}],
-                            "totalCount": 1,
-                        }
-                    }
+                    "document": {"answers": {"edges": [{"node": {"stringValue": "b"}}]}}
                 }
             },
             {
                 "node": {
-                    "document": {
-                        "answers": {
-                            "edges": [{"node": {"stringValue": "d"}}],
-                            "totalCount": 1,
-                        }
-                    }
+                    "document": {"answers": {"edges": [{"node": {"stringValue": "d"}}]}}
                 }
             },
             {
                 "node": {
-                    "document": {
-                        "answers": {
-                            "edges": [{"node": {"stringValue": "f"}}],
-                            "totalCount": 1,
-                        }
-                    }
+                    "document": {"answers": {"edges": [{"node": {"stringValue": "f"}}]}}
                 }
             },
-        ],
-        "totalCount": 3,
+        ]
     }
 }
 
@@ -349,36 +324,20 @@ snapshots["test_order_by_question_answer_value[form-True-False] 1"] = {
         "edges": [
             {
                 "node": {
-                    "document": {
-                        "answers": {
-                            "edges": [{"node": {"stringValue": "f"}}],
-                            "totalCount": 1,
-                        }
-                    }
+                    "document": {"answers": {"edges": [{"node": {"stringValue": "f"}}]}}
                 }
             },
             {
                 "node": {
-                    "document": {
-                        "answers": {
-                            "edges": [{"node": {"stringValue": "d"}}],
-                            "totalCount": 1,
-                        }
-                    }
+                    "document": {"answers": {"edges": [{"node": {"stringValue": "d"}}]}}
                 }
             },
             {
                 "node": {
-                    "document": {
-                        "answers": {
-                            "edges": [{"node": {"stringValue": "b"}}],
-                            "totalCount": 1,
-                        }
-                    }
+                    "document": {"answers": {"edges": [{"node": {"stringValue": "b"}}]}}
                 }
             },
-        ],
-        "totalCount": 3,
+        ]
     }
 }
 
@@ -392,8 +351,7 @@ snapshots["test_order_by_question_answer_value[date-True-True] 1"] = {
                             "edges": [
                                 {"node": {"dateValue": "2019-05-27"}},
                                 {"node": {"dateValue": "2019-05-28"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -405,8 +363,7 @@ snapshots["test_order_by_question_answer_value[date-True-True] 1"] = {
                             "edges": [
                                 {"node": {"dateValue": "2019-05-29"}},
                                 {"node": {"dateValue": "2019-05-30"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -418,14 +375,12 @@ snapshots["test_order_by_question_answer_value[date-True-True] 1"] = {
                             "edges": [
                                 {"node": {"dateValue": "2019-05-31"}},
                                 {"node": {"dateValue": "2019-05-26"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
             },
-        ],
-        "totalCount": 3,
+        ]
     }
 }
 
@@ -439,8 +394,7 @@ snapshots["test_order_by_question_answer_value[date-True-False] 1"] = {
                             "edges": [
                                 {"node": {"dateValue": "2019-05-31"}},
                                 {"node": {"dateValue": "2019-05-26"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -452,8 +406,7 @@ snapshots["test_order_by_question_answer_value[date-True-False] 1"] = {
                             "edges": [
                                 {"node": {"dateValue": "2019-05-29"}},
                                 {"node": {"dateValue": "2019-05-30"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -465,14 +418,12 @@ snapshots["test_order_by_question_answer_value[date-True-False] 1"] = {
                             "edges": [
                                 {"node": {"dateValue": "2019-05-27"}},
                                 {"node": {"dateValue": "2019-05-28"}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
             },
-        ],
-        "totalCount": 3,
+        ]
     }
 }
 
@@ -486,8 +437,7 @@ snapshots["test_order_by_question_answer_value[file-True-True] 1"] = {
                             "edges": [
                                 {"node": {"fileValue": {"name": "b"}}},
                                 {"node": {"fileValue": {"name": "e"}}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -499,8 +449,7 @@ snapshots["test_order_by_question_answer_value[file-True-True] 1"] = {
                             "edges": [
                                 {"node": {"fileValue": {"name": "d"}}},
                                 {"node": {"fileValue": {"name": "c"}}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -512,14 +461,12 @@ snapshots["test_order_by_question_answer_value[file-True-True] 1"] = {
                             "edges": [
                                 {"node": {"fileValue": {"name": "f"}}},
                                 {"node": {"fileValue": {"name": "a"}}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
             },
-        ],
-        "totalCount": 3,
+        ]
     }
 }
 
@@ -533,8 +480,7 @@ snapshots["test_order_by_question_answer_value[file-True-False] 1"] = {
                             "edges": [
                                 {"node": {"fileValue": {"name": "f"}}},
                                 {"node": {"fileValue": {"name": "a"}}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -546,8 +492,7 @@ snapshots["test_order_by_question_answer_value[file-True-False] 1"] = {
                             "edges": [
                                 {"node": {"fileValue": {"name": "d"}}},
                                 {"node": {"fileValue": {"name": "c"}}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
@@ -559,13 +504,11 @@ snapshots["test_order_by_question_answer_value[file-True-False] 1"] = {
                             "edges": [
                                 {"node": {"fileValue": {"name": "b"}}},
                                 {"node": {"fileValue": {"name": "e"}}},
-                            ],
-                            "totalCount": 2,
+                            ]
                         }
                     }
                 }
             },
-        ],
-        "totalCount": 3,
+        ]
     }
 }

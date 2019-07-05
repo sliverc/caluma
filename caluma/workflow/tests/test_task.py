@@ -9,7 +9,6 @@ def test_query_all_tasks(db, snapshot, task, schema_executor):
     query = """
         query AllTasks($name: String!) {
           allTasks(name: $name) {
-            totalCount
             edges {
               node {
                 __typename

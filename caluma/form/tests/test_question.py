@@ -40,7 +40,6 @@ def test_query_all_questions(
     query = """
         query AllQuestionsQuery($search: String, $forms: [ID]) {
           allQuestions(isArchived: false, search: $search, excludeForms: $forms) {
-            totalCount
             edges {
               node {
                 id
@@ -89,7 +88,6 @@ def test_query_all_questions(
                 }
                 ... on MultipleChoiceQuestion {
                   options {
-                    totalCount
                     edges {
                       node {
                         slug
@@ -99,7 +97,6 @@ def test_query_all_questions(
                 }
                 ... on ChoiceQuestion {
                   options {
-                    totalCount
                     edges {
                       node {
                         slug

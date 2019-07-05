@@ -18,7 +18,6 @@ def test_query_all_workflows(
     query = """
         query AllWorkflows($name: String!) {
           allWorkflows(name: $name) {
-            totalCount
             edges {
               node {
                 slug
@@ -29,7 +28,6 @@ def test_query_all_workflows(
                   slug
                 }
                 flows {
-                  totalCount
                   edges {
                     node {
                       tasks {
@@ -71,7 +69,6 @@ def test_save_workflow(
             workflow {
               allowAllForms
               allowForms {
-                totalCount
                 edges {
                   node {
                     slug
@@ -127,7 +124,6 @@ def test_add_workflow_flow(
                 slug
               }
               flows {
-                totalCount
                 edges {
                   node {
                     createdByUser

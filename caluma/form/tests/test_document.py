@@ -46,12 +46,10 @@ def test_query_all_documents(
     query = """
         query AllDocumentsQuery($search: String) {
           allDocuments(search: $search) {
-            totalCount
             edges {
               node {
                 createdByUser
                 answers {
-                  totalCount
                   edges {
                     node {
                       __typename

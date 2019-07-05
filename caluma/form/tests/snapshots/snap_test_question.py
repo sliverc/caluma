@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 from snapshottest import Snapshot
 
+
 snapshots = Snapshot()
 
 snapshots[
@@ -24,8 +25,7 @@ snapshots[
                     "slug": "effort-meet",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -47,8 +47,7 @@ snapshots[
                     "slug": "effort-meet",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -70,8 +69,7 @@ snapshots[
                     "slug": "effort-meet",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -90,8 +88,7 @@ snapshots[
                     "slug": "effort-meet",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -124,8 +121,7 @@ snapshots[
                     "slug": "effort-meet",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -147,8 +143,7 @@ snapshots[
                     "slug": "effort-meet",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -164,15 +159,11 @@ snapshots[
                     "infoText": "",
                     "label": "Brian Williams",
                     "meta": {},
-                    "options": {
-                        "edges": [{"node": {"slug": "treatment-radio"}}],
-                        "totalCount": 1,
-                    },
+                    "options": {"edges": [{"node": {"slug": "treatment-radio"}}]},
                     "slug": "effort-meet",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -188,15 +179,11 @@ snapshots[
                     "infoText": "",
                     "label": "Brian Williams",
                     "meta": {},
-                    "options": {
-                        "edges": [{"node": {"slug": "treatment-radio"}}],
-                        "totalCount": 1,
-                    },
+                    "options": {"edges": [{"node": {"slug": "treatment-radio"}}]},
                     "slug": "effort-meet",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -216,8 +203,7 @@ snapshots[
                     "subForm": {"slug": "suggest-traditional"},
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -236,8 +222,7 @@ snapshots[
                     "slug": "effort-meet",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -271,8 +256,7 @@ snapshots[
                     "slug": "effort-meet",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -306,8 +290,7 @@ snapshots[
                     "slug": "effort-meet",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -328,8 +311,7 @@ snapshots[
 Kid avoid player relationship to range whose. Draw free property consider.""",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 

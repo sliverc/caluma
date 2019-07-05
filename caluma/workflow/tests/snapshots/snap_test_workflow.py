@@ -24,8 +24,7 @@ Kid avoid player relationship to range whose. Draw free property consider.""",
                                     "tasks": [{"slug": "few-list-tax"}],
                                 }
                             }
-                        ],
-                        "totalCount": 1,
+                        ]
                     },
                     "meta": {},
                     "name": "Brian Williams",
@@ -34,8 +33,7 @@ Kid avoid player relationship to range whose. Draw free property consider.""",
                     "tasks": [{"slug": "few-list-tax"}],
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -44,10 +42,7 @@ snapshots["test_save_workflow 1"] = {
         "clientMutationId": "testid",
         "workflow": {
             "allowAllForms": False,
-            "allowForms": {
-                "edges": [{"node": {"slug": "sound-air-mission"}}],
-                "totalCount": 1,
-            },
+            "allowForms": {"edges": [{"node": {"slug": "sound-air-mission"}}]},
             "meta": {},
             "name": "Brian Williams",
             "slug": "effort-meet",
@@ -69,8 +64,7 @@ snapshots['test_add_workflow_flow[task-slug-"task-slug"|task-True] 1'] = {
                             "tasks": [{"slug": "task-slug"}],
                         }
                     }
-                ],
-                "totalCount": 1,
+                ]
             },
             "tasks": [
                 {"slug": "task-slug"},

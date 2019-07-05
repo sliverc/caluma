@@ -24,14 +24,12 @@ snapshots["test_query_all_documents[integer-None-1-None] 1"] = {
                                     },
                                 }
                             }
-                        ],
-                        "totalCount": 1,
+                        ]
                     },
                     "createdByUser": "b24d3781-2f59-44c4-8602-cffe6aa89ae7",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -52,14 +50,12 @@ snapshots["test_query_all_documents[float-None-2.1-None] 1"] = {
                                     },
                                 }
                             }
-                        ],
-                        "totalCount": 1,
+                        ]
                     },
                     "createdByUser": "b24d3781-2f59-44c4-8602-cffe6aa89ae7",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -80,14 +76,12 @@ snapshots["test_query_all_documents[text-None-somevalue-None] 1"] = {
                                     "string_value": "somevalue",
                                 }
                             }
-                        ],
-                        "totalCount": 1,
+                        ]
                     },
                     "createdByUser": "b24d3781-2f59-44c4-8602-cffe6aa89ae7",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -108,14 +102,12 @@ snapshots["test_query_all_documents[multiple_choice-None-answer__value3-None] 1"
                                     },
                                 }
                             }
-                        ],
-                        "totalCount": 1,
+                        ]
                     },
                     "createdByUser": "b24d3781-2f59-44c4-8602-cffe6aa89ae7",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -136,14 +128,12 @@ snapshots["test_query_all_documents[date-None-None-2019-02-22] 1"] = {
                                     },
                                 }
                             }
-                        ],
-                        "totalCount": 1,
+                        ]
                     },
                     "createdByUser": "b24d3781-2f59-44c4-8602-cffe6aa89ae7",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -189,14 +179,12 @@ snapshots["test_query_all_documents[file-None-some-file.pdf-None] 1"] = {
                                     },
                                 }
                             }
-                        ],
-                        "totalCount": 1,
+                        ]
                     },
                     "createdByUser": "b24d3781-2f59-44c4-8602-cffe6aa89ae7",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -242,14 +230,12 @@ snapshots["test_query_all_documents[file-None-some-other-file.pdf-None] 1"] = {
                                     },
                                 }
                             }
-                        ],
-                        "totalCount": 1,
+                        ]
                     },
                     "createdByUser": "b24d3781-2f59-44c4-8602-cffe6aa89ae7",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -270,14 +256,12 @@ snapshots["test_query_all_documents[dynamic_choice-MyDataSource-5.5-None] 1"] = 
                                     "string_value": "5.5",
                                 }
                             }
-                        ],
-                        "totalCount": 1,
+                        ]
                     },
                     "createdByUser": "b24d3781-2f59-44c4-8602-cffe6aa89ae7",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -300,14 +284,12 @@ snapshots[
                                     },
                                 }
                             }
-                        ],
-                        "totalCount": 1,
+                        ]
                     },
                     "createdByUser": "b24d3781-2f59-44c4-8602-cffe6aa89ae7",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
@@ -328,14 +310,12 @@ snapshots["test_query_all_documents[table-None-None-None] 1"] = {
                                     "table_value": [{"form": {"slug": "effort-meet"}}],
                                 }
                             }
-                        ],
-                        "totalCount": 1,
+                        ]
                     },
                     "createdByUser": "872d1b6f-790c-473c-b5e9-2e714d607695",
                 }
             }
-        ],
-        "totalCount": 1,
+        ]
     }
 }
 
