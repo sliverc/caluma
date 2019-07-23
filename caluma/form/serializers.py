@@ -534,9 +534,7 @@ class SaveDocumentTableAnswerSerializer(SaveAnswerSerializer):
     )
 
     def _get_document_tree(self, document_id):
-        answers = models.AnswerDocument.objects.filter(document_id=document_id).values(
-            "answer"
-        )
+        answers = models.Answer.objects.filter(document_id=document_id)
         child_documents = models.Document.objects.filter(answers__in=answers).distinct()
 
         for child_document in child_documents:
@@ -590,17 +588,16 @@ class SaveDocumentTableAnswerSerializer(SaveAnswerSerializer):
     def update(self, instance, validated_data):
         documents = validated_data.pop("documents")
 
-        # detach answers to its own family tree
-        answer_documents = models.AnswerDocument.objects.filter(answer=instance)
-        for answer_document in models.Document.objects.filter(
-            pk__in=answer_documents.values("document")
-        ):
-            children = self._get_document_tree(answer_document.pk)
+        document_pks = instance.documents.values_list("pk", flat=True)
+        for document_pk in document_pks:
+            children = self._get_document_tree(document_pk)
             for doc in models.Document.objects.filter(pk__in=children):
-                doc.family = answer_document.pk
+                doc.family = document_pk
                 doc.save()
 
-        answer_documents.delete()
+        models.AnswerDocument.objects.filter(
+            document__in=instance.documents.values("pk")
+        ).delete()
 
         instance = super().update(instance, validated_data)
         self.create_answer_documents(instance, documents)
